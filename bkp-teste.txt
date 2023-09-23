@@ -1,0 +1,8 @@
+´´A API do Mercado Livre foi escolhida como primeira integração por se tratar de um marketplace consolidado, número um no Brasil, sendo possível realizar vendas de produtos de todos os segmentos (marketplace amplo), além de disponibilizar uma documentação de fácil utilização. 
+Para o gerenciamento do catálogo do Agility E-commerce com essa integração, o Mercado Livre exige a geração de tokens (código de acesso), com duração máxima de 6h, para se manter a conexão entre os sistemas, utilizando-se de uma conta com perfil do tipo vendedor configurada a e habilitada. Durante os levantamentos, não foi encontrado nenhum ambiente sandbox no Mercado Livre que servisse como ambiente de teste no acesso de sua API. 
+Além da geração desses tokens, a API destacam-se os seguintes serviços, considerando aqueles que efetivamente se demonstraram úteis para no processo de integração. Para utilizar o principal serviço de login na qual recebemos o direito de integrar com o token já descrito acima, é necessário criar um conta no mercado livre depois vincular um aplicativo a ela, com isso será obtido as credencias cliente_id e secret_key, que serão utilizadas na geração do token de login e refresh token para ser utilizado quando token de login expirar.
+          Outros serviços de suma importância são: publicar e manter anúncios dos catalogo, receber notificações dos estados dos pedidos realizados, consultar faturamento da loja por período, consultar categorias principais. 
+
+
+
+Toda comunicação com API nossa será feito com autorização de uma token JWT, os dados são criptografado em 64bits no momento que e realizado login e realizar compras, garantido um proteção em dados sensíveis.
